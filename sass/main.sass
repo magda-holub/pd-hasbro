@@ -1,0 +1,262 @@
+@import ../sass/partials/mixins
+@import ../sass/partials/functions
+@import ../sass/partials/colors
+@import ../sass/partials/type
+@import ../sass/partials/addons
+@import ../sass/partials/video-select
+@import ../sass/partials/carouselEngine
+@import ../sass/partials/swiper
+@import ../sass/partials/carousel
+@import ../sass/partials/brand-select
+
+//articlePage
+#celek
+    display: block
+    position: relative
+    @include roboto
+    background-color: $c-white
+    color: $c-grey-6
+
+    //reset
+    *, *::before, *::after
+        box-sizing: border-box
+
+    h1, h2, h3, h4, p, ul, ol, li, figure
+        margin: 0
+        padding: 0
+
+    input, button, textarea, select
+        font: inherit
+
+    .hidden
+        display: none
+
+    //alza  styles reset
+    &.blank p
+            margin-top: 0
+
+    //links
+    a
+        transition: all 200ms ease-in-out
+
+    //imgs
+    img
+        display: block
+        height: auto
+        max-width: 100%
+        aspect-ratio: attr(width), attr(height)
+
+    //layout
+    .pp-container__12
+        padding: 0
+
+    .pp-container__10
+        padding: 0 97px
+
+    .pp-container__8
+        padding: 0 214px
+
+    .flex-container
+        @include flexVert
+        gap: 48px
+
+    //content
+    .pp-header
+        text-align: center
+    
+        &--divider
+            background-color: $c-disney
+            height: 10px
+
+        &--perex
+            padding-top: 48px
+            @include flexVert
+            align-items: center
+            gap: 48px
+
+        &--heading
+            color: $c-disney
+
+        &--banner img
+            width: 100%
+    
+    .pp-icons
+        background-color: transparentize($c-disney, .95)
+        padding-top: 48px
+        padding-bottom: 48px
+        text-align: center
+
+        &--row
+            @include flexHor
+            gap: 24px
+
+        &--card
+            @include flexVert
+            align-items: center
+            gap: 24px
+            flex: 1 1 0
+
+            &--img
+                height: 80px
+                width: 80px
+                fill: $c-disney
+
+            &--heading
+                height: 50px
+
+            h3, p
+                color: $c-disney
+
+    .pp-video
+        position: relative
+        padding-top: 56.25%
+        height: 0
+
+        iframe
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            max-width: 100%
+            margin: 0 auto
+            border-radius: 4px
+            border: 10px solid #fff
+            box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+            left: 50%
+            transform: translateX(-50%)
+
+    .pp-features
+        @include flexHor
+        align-items: center
+        gap: 42px
+
+        &--heading
+            color: $c-disney
+
+        *
+            flex: 1 1 0
+
+        img
+            border-radius: 4px
+            width: 100%
+
+        &--list
+            margin-top: 24px
+
+        &--item
+            @include flexHor
+            gap: 12px
+            margin-top: 12px
+
+        &--marker
+            width: 5px
+            height: 5px
+            max-width: 5px
+            border-radius: 50%
+            margin-top: 8px
+            background-color: $c-disney
+
+    .pp-zigzag
+        background-color: transparentize($c-disney, .95)
+        padding-top: 48px
+        padding-bottom: 48px
+        @include flexVert
+        gap: 48px
+
+        img
+            border-radius: 4px
+            width: 100%
+
+        &--row
+            @include flexHor
+            align-items: center
+            gap: 42px
+
+            *
+                flex: 1 1 0
+
+            &:nth-child(even) .pp-zigzag--caption
+                    order: 1
+
+        &--heading
+            color: $c-disney
+
+        &--text
+            margin-top: 12px
+
+//3col
+.layout-0 #celek
+    .pp-container__10
+        padding: 0 60px
+
+    .pp-container__8
+        padding: 0 90px
+
+
+//mobile
+@media only screen and (max-width: 975px)
+    .mobile #celek,
+    .mobileapp #celek
+        //layout
+        .pp-container
+            &__12, &__10, &__8
+                padding-left: 14px
+                padding-right: 14px
+
+        //header
+        .pp-header--logo
+            width: 40%
+
+            img
+                margin: auto
+
+        //features list
+        .pp-features
+            flex-direction: column
+            gap: 24px
+            align-items: stretch
+            
+            &--caption
+                width: 604px
+                margin-top: 24px
+
+        //video
+        .pp-video iframe
+            width: 92%
+            height: 92%
+
+@media only screen and (max-width: 750px)
+    .mobile #celek,
+    .mobileapp #celek
+        //icons
+        .pp-icons
+            &--row
+                flex-direction: column
+                align-items: center
+                gap: 48px
+            
+            &--card
+                width: 85%
+
+                &--heading
+                    height: auto
+
+@media only screen and (max-width: 650px)
+    .mobile #celek,
+    .mobileapp #celek
+        //features list
+        .pp-features--caption
+            width: auto
+
+        //zigzag
+        .pp-zigzag
+            gap: 24px
+
+            &--row
+                flex-direction: column
+                align-items: stretch
+                gap: 24px
+
+                &:nth-child(even) .pp-zigzag--caption
+                        order: 0

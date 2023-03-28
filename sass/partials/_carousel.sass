@@ -1,0 +1,236 @@
+// carousel
+#celek .ppCarousel
+    position: relative
+    margin-top: 60px
+
+    .hdng2
+        font-size: 30px
+        text-align: center
+        color: $c-disney
+
+    .lp-container
+        text-align: center
+        position: relative
+        z-index: 3
+        
+
+        &__carousel
+            max-width: 100%
+            position: relative
+
+            // carousel
+            .swiper-container
+                height: auto
+                padding: 24px 10px
+                max-width: 1084px
+                margin: 0 auto
+            
+
+            .swiper-wrapper
+                padding: 5px 0 10px
+                width: 100%
+                margin: 0 auto
+                height: auto
+            
+
+            .swiper-slide
+                border-radius: 6px
+                cursor: pointer
+                height: auto
+                transition: .3s ease-in-out
+                box-sizing: border-box
+                background: $c-white
+                text-align: center
+                padding: 16px 8px
+
+                &:hover
+                    box-shadow: 0 2px 6px rgba($color: #000000, $alpha: .15)
+                
+
+                .swiper-product-img
+                    margin: 0 auto
+                    max-width: 80%
+                
+
+                .swiper-product-name
+                    font-size: 14px
+                    color: $c-black
+                    font-weight: 500
+                    line-height: 1.2
+                    height: 33px
+                    transition: .3s ease-in-out
+                    margin: 24px 0 0
+                    padding: 0 10px
+                    overflow: hidden
+                    @include roboto()
+                    margin-bottom: 12px
+                
+
+                .swiper-product-cprice
+                    font-size: 14px
+                    font-weight: 400
+                    color: #535252
+                    margin-top: 20px
+                    margin-bottom: 8px
+                    text-decoration: line-through
+                    display: inline
+                    @include roboto()
+                    padding: 0 1px
+                
+
+                .noValue
+                    display: none
+                
+
+                .swiper-product-price
+                    font-weight: 400
+                    color: #F00000
+                    font-size: 14px
+                    margin: 0 auto
+                    display: inline-block
+                    @include roboto()
+                    padding: 0 1px
+                
+            
+
+            // Bullets
+            .swiper-pagination
+                bottom: auto
+                left: 50%
+                transform: translate(-50%, 0)
+            
+
+            .swiper-pagination-bullet
+                margin-right: 5px
+
+                &:last-of-type
+                    margin-right: 0
+                
+            
+
+            .swiper-pagination-bullet
+                opacity: 1
+                background: #E8E8E8
+                width: 12px
+                height: 12px
+            
+
+            .swiper-pagination-bullet-active
+                background-color: $c-disney
+                opacity: 1
+            
+
+            .swiper-pagination-bullet:focus,
+            .swiper-pagination-bullet-active:focus
+                outline: transparent
+            
+
+            // Buttons
+            .swiper-button-next, .swiper-button-prev
+                top: 50%
+                height: 32px
+                transform: translateY(-50%)
+            
+
+            .swiper-button-next:focus, .swiper-button-prev:focus
+                outline: transparent
+            
+
+            .swiper-button-prev, 
+            .swiper-container-rtl .swiper-button-next,
+            .swiper-button-next, 
+            .swiper-container-rtl .swiper-button-prev
+                background-image: none
+            
+
+            .swiper-button-prev:after,
+            .swiper-button-next:after
+                display: none
+            
+
+            .swiper-button-prev,
+            .swiper-button-next
+                width: 25px
+                height: 60px
+                background-color: $c-disney
+                border-radius: 0 4px 4px 0
+                transition: .3s ease-in-out
+                box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+                margin: 0
+
+                &:hover
+                    background-color: darken($c-disney, 6%)
+                
+
+                .swiper-button-img
+                    width: 12px
+
+                    path
+                        fill: $c-white
+                    
+                
+            
+
+            .swiper-button-prev
+                left: 0
+
+                .swiper-button-img
+                    margin-left: 4px
+                
+            
+
+            .swiper-button-next
+                right: 0
+                border-radius: 4px 0 0 4px
+                box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+
+                .swiper-button-img
+                    margin-right: 4px
+                
+            
+        
+    
+
+
+// legend off
+#legend .lp-container__carousel
+    //display: none
+
+
+// LAYOUT-0
+.layout-0 #celek
+    // carousel
+    .ppCarousel .lp-container__carousel .swiper-container
+        max-width: 880px
+    
+ 
+    
+// MOBILE & APP version
+@media only screen and (max-width: 980px)
+    .mobile #celek,
+    .mobileapp #celek
+        .swiper-container
+            max-width: 880px
+         
+
+        // carousel
+        .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-name
+            margin-bottom: 0
+        
+
+        .ppCarousel .lp-container__carousel .swiper-pagination
+            display: none
+        
+
+        .swiper-button-prev
+            left: 0
+        
+
+        .swiper-button-next
+            right: 0
+        
+
+        .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-img
+            max-width: 110px
+        
+    

@@ -1,0 +1,1545 @@
+.hdng2 {
+  font-size: 30px;
+  line-height: 37.5px;
+  font-weight: 700;
+}
+
+.hdng3 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.text__large {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.text__normal {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.text__small {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 975px) {
+  .mobile #celek .hdng2,
+  .mobileapp Z#celek .hdng2 {
+    font-size: 26px;
+    line-height: 32.5px;
+    font-weight: 700;
+  }
+  .mobile #celek .hdng3,
+  .mobileapp Z#celek .hdng3 {
+    font-size: 18px;
+    line-height: 22.5px;
+    font-weight: 500;
+  }
+  .mobile #celek .text__large,
+  .mobileapp Z#celek .text__large {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  .mobile #celek .text__normal,
+  .mobileapp Z#celek .text__normal {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .mobile #celek .text__small,
+  .mobileapp Z#celek .text__small {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+#celek .ppAddons {
+  padding: 40px;
+  background-color: #f8f8f8;
+  text-align: center;
+  display: none;
+  width: 100%;
+}
+
+#legend #celek .ppAddons {
+  display: block !important;
+  height: 100% !important;
+}
+
+#celek .video-select .par {
+  margin: 16px;
+}
+#celek .video-select__videoID {
+  padding: 8px 14px;
+  width: 120px;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  display: block;
+  margin: auto;
+  width: 180px;
+}
+#celek .video-select .btn {
+  cursor: pointer;
+  margin: 32px auto 0;
+  display: inline-block;
+  padding: 0 24px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  background-color: #a1c900;
+}
+#celek .video-select .btn:hover {
+  background-color: #88aa00;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+}
+#celek .video-select .btn:active {
+  background-color: #708c00;
+  box-shadow: none;
+}
+#celek .video-select .btn__disabled {
+  background-color: rgba(161, 201, 0, 0.5);
+  box-shadow: none;
+}
+
+#celek .ppAddCarousel .par {
+  margin: 16px;
+}
+#celek .ppAddCarousel .productsGroup {
+  padding: 8px 14px;
+  width: 120px;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  display: block;
+  margin: auto;
+  width: 180px;
+}
+#celek .ppAddCarousel .btn {
+  cursor: pointer;
+  margin: 32px auto 0;
+  display: inline-block;
+  padding: 0 24px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  background-color: #a1c900;
+}
+#celek .ppAddCarousel .btn:hover {
+  background-color: #88aa00;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+}
+#celek .ppAddCarousel .btn:active {
+  background-color: #708c00;
+  box-shadow: none;
+}
+#celek .ppAddCarousel .btn__disabled {
+  background-color: rgba(161, 201, 0, 0.5);
+  box-shadow: none;
+}
+
+/**
+ * * Swiper 5.3.0
+ * * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * * http://swiperjs.com
+ * *
+ * * Copyright 2014-2020 Vladimir Kharlampidi
+ * *
+ * * Released under the MIT License
+ * *
+ * * Released on: January 11, 2020
+ * */
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-container-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-container-multirow > .swiper-wrapper {
+  flex-wrap: wrap;
+}
+
+.swiper-container-multirow-column > .swiper-wrapper {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+
+.swiper-container-3d {
+  perspective: 1200px;
+}
+
+.swiper-container-3d .swiper-cube-shadow,
+.swiper-container-3d .swiper-slide,
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-wrapper {
+  transform-style: preserve-3d;
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-container-3d .swiper-slide-shadow-top {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-container-css-mode > .swiper-wrapper {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-container-css-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: start start;
+}
+
+.swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
+  scroll-snap-type: x mandatory;
+}
+
+.swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
+  scroll-snap-type: y mandatory;
+}
+.swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper :root {
+  --swiper-navigation-size: 44px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: "prev";
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: "next";
+}
+
+.swiper-button-next.swiper-button-white,
+.swiper-button-prev.swiper-button-white {
+  --swiper-navigation-color: #ffffff;
+}
+
+.swiper-button-next.swiper-button-black,
+.swiper-button-prev.swiper-button-black {
+  --swiper-navigation-color: #000000;
+}
+
+.swiper-button-lock {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+  font-size: 0;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: scale(0.33);
+  position: relative;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+}
+
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 6px 0;
+  display: block;
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  display: inline-block;
+  transition: 0.2s transform, 0.2s top;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 4px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 0.2s transform, 0.2s left;
+}
+
+.swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 0.2s transform, 0.2s right;
+}
+
+.swiper-pagination-progressbar {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: left top;
+}
+
+.swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  transform-origin: right top;
+}
+
+.swiper-container-horizontal > .swiper-pagination-progressbar,
+.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 0;
+}
+
+.swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-container-vertical > .swiper-pagination-progressbar {
+  width: 4px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.swiper-pagination-white {
+  --swiper-pagination-color: #ffffff;
+}
+
+.swiper-pagination-black {
+  --swiper-pagination-color: #000000;
+}
+
+.swiper-pagination-lock {
+  display: none;
+}
+
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.swiper-container-horizontal > .swiper-scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: 3px;
+  z-index: 50;
+  height: 5px;
+  width: 98%;
+}
+
+.swiper-container-vertical > .swiper-scrollbar {
+  position: absolute;
+  right: 3px;
+  top: 1%;
+  z-index: 50;
+  width: 5px;
+  height: 98%;
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+}
+
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+
+.swiper-scrollbar-lock {
+  display: none;
+}
+
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-zoom-container > canvas,
+.swiper-zoom-container > img,
+.swiper-zoom-container > svg {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.swiper-slide-zoomed {
+  cursor: move;
+}
+
+.swiper-lazy-preloader {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  z-index: 10;
+  transform-origin: 50%;
+  animation: swiper-preloader-spin 1s infinite linear;
+  box-sizing: border-box;
+  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+
+.swiper-lazy-preloader-white {
+  --swiper-preloader-color: #fff;
+}
+
+.swiper-lazy-preloader-black {
+  --swiper-preloader-color: #000;
+}
+
+@keyframes swiper-preloader-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+  transition-timing-function: ease-out;
+}
+
+.swiper-container-fade .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+
+.swiper-container-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-container-cube {
+  overflow: visible;
+}
+
+.swiper-container-cube .swiper-slide {
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+  visibility: hidden;
+  transform-origin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container-cube .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-cube.swiper-container-rtl .swiper-slide {
+  transform-origin: 100% 0;
+}
+
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-cube .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-cube .swiper-slide-next,
+.swiper-container-cube .swiper-slide-next + .swiper-slide,
+.swiper-container-cube .swiper-slide-prev {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.swiper-container-cube .swiper-slide-shadow-bottom,
+.swiper-container-cube .swiper-slide-shadow-left,
+.swiper-container-cube .swiper-slide-shadow-right,
+.swiper-container-cube .swiper-slide-shadow-top {
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.swiper-container-cube .swiper-cube-shadow {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  filter: blur(50px);
+  z-index: 0;
+}
+
+.swiper-container-flip {
+  overflow: visible;
+}
+
+.swiper-container-flip .swiper-slide {
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.swiper-container-flip .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-flip .swiper-slide-active,
+.swiper-container-flip .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-container-flip .swiper-slide-shadow-bottom,
+.swiper-container-flip .swiper-slide-shadow-left,
+.swiper-container-flip .swiper-slide-shadow-right,
+.swiper-container-flip .swiper-slide-shadow-top {
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#celek .ppCarousel {
+  position: relative;
+  margin-top: 60px;
+}
+#celek .ppCarousel .hdng2 {
+  font-size: 30px;
+  text-align: center;
+  color: #EE0779;
+}
+#celek .ppCarousel .lp-container {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+#celek .ppCarousel .lp-container__carousel {
+  max-width: 100%;
+  position: relative;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-container {
+  height: auto;
+  padding: 24px 10px;
+  max-width: 1084px;
+  margin: 0 auto;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-wrapper {
+  padding: 5px 0 10px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-slide {
+  border-radius: 6px;
+  cursor: pointer;
+  height: auto;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+  background: #ffffff;
+  text-align: center;
+  padding: 16px 8px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-slide:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+#celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-img {
+  margin: 0 auto;
+  max-width: 80%;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-name {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.2;
+  height: 33px;
+  transition: 0.3s ease-in-out;
+  margin: 24px 0 0;
+  padding: 0 10px;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 12px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-cprice {
+  font-size: 14px;
+  font-weight: 400;
+  color: #535252;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  text-decoration: line-through;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  padding: 0 1px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-slide .noValue {
+  display: none;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-price {
+  font-weight: 400;
+  color: #F00000;
+  font-size: 14px;
+  margin: 0 auto;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  padding: 0 1px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-pagination {
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#celek .ppCarousel .lp-container__carousel .swiper-pagination-bullet {
+  margin-right: 5px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-pagination-bullet:last-of-type {
+  margin-right: 0;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-pagination-bullet {
+  opacity: 1;
+  background: #E8E8E8;
+  width: 12px;
+  height: 12px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-pagination-bullet-active {
+  background-color: #EE0779;
+  opacity: 1;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-pagination-bullet:focus,
+#celek .ppCarousel .lp-container__carousel .swiper-pagination-bullet-active:focus {
+  outline: transparent;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-next, #celek .ppCarousel .lp-container__carousel .swiper-button-prev {
+  top: 50%;
+  height: 32px;
+  transform: translateY(-50%);
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-next:focus, #celek .ppCarousel .lp-container__carousel .swiper-button-prev:focus {
+  outline: transparent;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev,
+#celek .ppCarousel .lp-container__carousel .swiper-container-rtl .swiper-button-next,
+#celek .ppCarousel .lp-container__carousel .swiper-button-next,
+#celek .ppCarousel .lp-container__carousel .swiper-container-rtl .swiper-button-prev {
+  background-image: none;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev:after,
+#celek .ppCarousel .lp-container__carousel .swiper-button-next:after {
+  display: none;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev,
+#celek .ppCarousel .lp-container__carousel .swiper-button-next {
+  width: 25px;
+  height: 60px;
+  background-color: #EE0779;
+  border-radius: 0 4px 4px 0;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 0;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev:hover,
+#celek .ppCarousel .lp-container__carousel .swiper-button-next:hover {
+  background-color: #d0066a;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev .swiper-button-img,
+#celek .ppCarousel .lp-container__carousel .swiper-button-next .swiper-button-img {
+  width: 12px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev .swiper-button-img path,
+#celek .ppCarousel .lp-container__carousel .swiper-button-next .swiper-button-img path {
+  fill: #ffffff;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev {
+  left: 0;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-prev .swiper-button-img {
+  margin-left: 4px;
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-next {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+}
+#celek .ppCarousel .lp-container__carousel .swiper-button-next .swiper-button-img {
+  margin-right: 4px;
+}
+
+.layout-0 #celek .ppCarousel .lp-container__carousel .swiper-container {
+  max-width: 880px;
+}
+
+@media only screen and (max-width: 980px) {
+  .mobile #celek .swiper-container,
+  .mobileapp #celek .swiper-container {
+    max-width: 880px;
+  }
+  .mobile #celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-name,
+  .mobileapp #celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-name {
+    margin-bottom: 0;
+  }
+  .mobile #celek .ppCarousel .lp-container__carousel .swiper-pagination,
+  .mobileapp #celek .ppCarousel .lp-container__carousel .swiper-pagination {
+    display: none;
+  }
+  .mobile #celek .swiper-button-prev,
+  .mobileapp #celek .swiper-button-prev {
+    left: 0;
+  }
+  .mobile #celek .swiper-button-next,
+  .mobileapp #celek .swiper-button-next {
+    right: 0;
+  }
+  .mobile #celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-img,
+  .mobileapp #celek .ppCarousel .lp-container__carousel .swiper-slide .swiper-product-img {
+    max-width: 110px;
+  }
+}
+#celek .brand-select__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: calc(25% - 10px);
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 36px 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+}
+#celek .brand-select__box:hover {
+  box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+#celek .brand-select__box--name {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 0;
+}
+#celek .brand-select__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: stretch;
+}
+
+#celek .disneyprincess .pp-header--divider,
+#celek .disneyprincess .pp-features--marker,
+#celek .disneyprincess .ppCarousel .swiper-pagination-bullet-active,
+#celek .disneyprincess .ppCarousel .swiper-button-prev,
+#celek .disneyprincess .ppCarousel .swiper-button-next {
+  background-color: #EE0779;
+}
+#celek .disneyprincess .pp-header--heading,
+#celek .disneyprincess .pp-icons--card h3,
+#celek .disneyprincess .pp-icons--card p,
+#celek .disneyprincess .pp-features--heading,
+#celek .disneyprincess .pp-features ul li::marker,
+#celek .disneyprincess .pp-zigzag--heading,
+#celek .disneyprincess .ppCarousel .hdng2 {
+  color: #EE0779;
+}
+#celek .disneyprincess .pp-icons,
+#celek .disneyprincess .pp-zigzag {
+  background-color: rgba(238, 7, 121, 0.05);
+}
+#celek .disneyprincess .ppCarousel .swiper-button-prev:hover,
+#celek .disneyprincess .ppCarousel .swiper-button-next:hover {
+  background-color: #d0066a;
+}
+#celek .disneyprincess .pp-icons--card--img {
+  fill: #EE0779;
+}
+
+#celek .monopoly .pp-header--divider,
+#celek .monopoly .pp-features--marker,
+#celek .monopoly .ppCarousel .swiper-pagination-bullet-active,
+#celek .monopoly .ppCarousel .swiper-button-prev,
+#celek .monopoly .ppCarousel .swiper-button-next {
+  background-color: #EC2127;
+}
+#celek .monopoly .pp-header--heading,
+#celek .monopoly .pp-icons--card h3,
+#celek .monopoly .pp-icons--card p,
+#celek .monopoly .pp-features--heading,
+#celek .monopoly .pp-features ul li::marker,
+#celek .monopoly .pp-zigzag--heading,
+#celek .monopoly .ppCarousel .hdng2 {
+  color: #EC2127;
+}
+#celek .monopoly .pp-icons,
+#celek .monopoly .pp-zigzag {
+  background-color: rgba(236, 33, 39, 0.05);
+}
+#celek .monopoly .ppCarousel .swiper-button-prev:hover,
+#celek .monopoly .ppCarousel .swiper-button-next:hover {
+  background-color: #dc1319;
+}
+#celek .monopoly .pp-icons--card--img {
+  fill: #EC2127;
+}
+
+#celek .transformers .pp-header--divider,
+#celek .transformers .pp-features--marker,
+#celek .transformers .ppCarousel .swiper-pagination-bullet-active,
+#celek .transformers .ppCarousel .swiper-button-prev,
+#celek .transformers .ppCarousel .swiper-button-next {
+  background-color: #C72034;
+}
+#celek .transformers .pp-header--heading,
+#celek .transformers .pp-icons--card h3,
+#celek .transformers .pp-icons--card p,
+#celek .transformers .pp-features--heading,
+#celek .transformers .pp-features ul li::marker,
+#celek .transformers .pp-zigzag--heading,
+#celek .transformers .ppCarousel .hdng2 {
+  color: #C72034;
+}
+#celek .transformers .pp-icons,
+#celek .transformers .pp-zigzag {
+  background-color: rgba(199, 32, 52, 0.05);
+}
+#celek .transformers .ppCarousel .swiper-button-prev:hover,
+#celek .transformers .ppCarousel .swiper-button-next:hover {
+  background-color: #ad1c2d;
+}
+#celek .transformers .pp-icons--card--img {
+  fill: #C72034;
+}
+
+#celek .mylittlepony .pp-header--divider,
+#celek .mylittlepony .pp-features--marker,
+#celek .mylittlepony .ppCarousel .swiper-pagination-bullet-active,
+#celek .mylittlepony .ppCarousel .swiper-button-prev,
+#celek .mylittlepony .ppCarousel .swiper-button-next {
+  background-color: #C35498;
+}
+#celek .mylittlepony .pp-header--heading,
+#celek .mylittlepony .pp-icons--card h3,
+#celek .mylittlepony .pp-icons--card p,
+#celek .mylittlepony .pp-features--heading,
+#celek .mylittlepony .pp-features ul li::marker,
+#celek .mylittlepony .pp-zigzag--heading,
+#celek .mylittlepony .ppCarousel .hdng2 {
+  color: #C35498;
+}
+#celek .mylittlepony .pp-icons,
+#celek .mylittlepony .pp-zigzag {
+  background-color: rgba(195, 84, 152, 0.05);
+}
+#celek .mylittlepony .ppCarousel .swiper-button-prev:hover,
+#celek .mylittlepony .ppCarousel .swiper-button-next:hover {
+  background-color: #b8418a;
+}
+#celek .mylittlepony .pp-icons--card--img {
+  fill: #C35498;
+}
+
+#celek .frozen .pp-header--divider,
+#celek .frozen .pp-features--marker,
+#celek .frozen .ppCarousel .swiper-pagination-bullet-active,
+#celek .frozen .ppCarousel .swiper-button-prev,
+#celek .frozen .ppCarousel .swiper-button-next {
+  background-color: #7F408E;
+}
+#celek .frozen .pp-header--heading,
+#celek .frozen .pp-icons--card h3,
+#celek .frozen .pp-icons--card p,
+#celek .frozen .pp-features--heading,
+#celek .frozen .pp-features ul li::marker,
+#celek .frozen .pp-zigzag--heading,
+#celek .frozen .ppCarousel .hdng2 {
+  color: #7F408E;
+}
+#celek .frozen .pp-icons,
+#celek .frozen .pp-zigzag {
+  background-color: rgba(127, 64, 142, 0.05);
+}
+#celek .frozen .ppCarousel .swiper-button-prev:hover,
+#celek .frozen .ppCarousel .swiper-button-next:hover {
+  background-color: #6c3679;
+}
+#celek .frozen .pp-icons--card--img {
+  fill: #7F408E;
+}
+
+#celek .nerf .pp-header--divider,
+#celek .nerf .pp-features--marker,
+#celek .nerf .ppCarousel .swiper-pagination-bullet-active,
+#celek .nerf .ppCarousel .swiper-button-prev,
+#celek .nerf .ppCarousel .swiper-button-next {
+  background-color: #1F4AB3;
+}
+#celek .nerf .pp-header--heading,
+#celek .nerf .pp-icons--card h3,
+#celek .nerf .pp-icons--card p,
+#celek .nerf .pp-features--heading,
+#celek .nerf .pp-features ul li::marker,
+#celek .nerf .pp-zigzag--heading,
+#celek .nerf .ppCarousel .hdng2 {
+  color: #1F4AB3;
+}
+#celek .nerf .pp-icons,
+#celek .nerf .pp-zigzag {
+  background-color: rgba(31, 74, 179, 0.05);
+}
+#celek .nerf .ppCarousel .swiper-button-prev:hover,
+#celek .nerf .ppCarousel .swiper-button-next:hover {
+  background-color: #1a3f99;
+}
+#celek .nerf .pp-icons--card--img {
+  fill: #1F4AB3;
+}
+
+#celek .jenga .pp-header--divider,
+#celek .jenga .pp-features--marker,
+#celek .jenga .ppCarousel .swiper-pagination-bullet-active,
+#celek .jenga .ppCarousel .swiper-button-prev,
+#celek .jenga .ppCarousel .swiper-button-next {
+  background-color: #0278BE;
+}
+#celek .jenga .pp-header--heading,
+#celek .jenga .pp-icons--card h3,
+#celek .jenga .pp-icons--card p,
+#celek .jenga .pp-features--heading,
+#celek .jenga .pp-features ul li::marker,
+#celek .jenga .pp-zigzag--heading,
+#celek .jenga .ppCarousel .hdng2 {
+  color: #0278BE;
+}
+#celek .jenga .pp-icons,
+#celek .jenga .pp-zigzag {
+  background-color: rgba(2, 120, 190, 0.05);
+}
+#celek .jenga .ppCarousel .swiper-button-prev:hover,
+#celek .jenga .ppCarousel .swiper-button-next:hover {
+  background-color: #0265a0;
+}
+#celek .jenga .pp-icons--card--img {
+  fill: #0278BE;
+}
+
+#celek .furreal .pp-header--divider,
+#celek .furreal .pp-features--marker,
+#celek .furreal .ppCarousel .swiper-pagination-bullet-active,
+#celek .furreal .ppCarousel .swiper-button-prev,
+#celek .furreal .ppCarousel .swiper-button-next {
+  background-color: #1ABDC2;
+}
+#celek .furreal .pp-header--heading,
+#celek .furreal .pp-icons--card h3,
+#celek .furreal .pp-icons--card p,
+#celek .furreal .pp-features--heading,
+#celek .furreal .pp-features ul li::marker,
+#celek .furreal .pp-zigzag--heading,
+#celek .furreal .ppCarousel .hdng2 {
+  color: #1ABDC2;
+}
+#celek .furreal .pp-icons,
+#celek .furreal .pp-zigzag {
+  background-color: rgba(26, 189, 194, 0.05);
+}
+#celek .furreal .ppCarousel .swiper-button-prev:hover,
+#celek .furreal .ppCarousel .swiper-button-next:hover {
+  background-color: #16a3a7;
+}
+#celek .furreal .pp-icons--card--img {
+  fill: #1ABDC2;
+}
+
+#celek .playdoh .pp-header--divider,
+#celek .playdoh .pp-features--marker,
+#celek .playdoh .ppCarousel .swiper-pagination-bullet-active,
+#celek .playdoh .ppCarousel .swiper-button-prev,
+#celek .playdoh .ppCarousel .swiper-button-next {
+  background-color: #0FA462;
+}
+#celek .playdoh .pp-header--heading,
+#celek .playdoh .pp-icons--card h3,
+#celek .playdoh .pp-icons--card p,
+#celek .playdoh .pp-features--heading,
+#celek .playdoh .pp-features ul li::marker,
+#celek .playdoh .pp-zigzag--heading,
+#celek .playdoh .ppCarousel .hdng2 {
+  color: #0FA462;
+}
+#celek .playdoh .pp-icons,
+#celek .playdoh .pp-zigzag {
+  background-color: rgba(15, 164, 98, 0.05);
+}
+#celek .playdoh .ppCarousel .swiper-button-prev:hover,
+#celek .playdoh .ppCarousel .swiper-button-next:hover {
+  background-color: #0c8851;
+}
+#celek .playdoh .pp-icons--card--img {
+  fill: #0FA462;
+}
+
+#celek .starwars .pp-header--divider,
+#celek .starwars .pp-features--marker,
+#celek .starwars .ppCarousel .swiper-pagination-bullet-active,
+#celek .starwars .ppCarousel .swiper-button-prev,
+#celek .starwars .ppCarousel .swiper-button-next {
+  background-color: #000000;
+}
+#celek .starwars .pp-header--heading,
+#celek .starwars .pp-icons--card h3,
+#celek .starwars .pp-icons--card p,
+#celek .starwars .pp-features--heading,
+#celek .starwars .pp-features ul li::marker,
+#celek .starwars .pp-zigzag--heading,
+#celek .starwars .ppCarousel .hdng2 {
+  color: #000000;
+}
+#celek .starwars .pp-icons,
+#celek .starwars .pp-zigzag {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#celek .starwars .ppCarousel .swiper-button-prev:hover,
+#celek .starwars .ppCarousel .swiper-button-next:hover {
+  background-color: black;
+}
+#celek .starwars .pp-icons--card--img {
+  fill: #000000;
+}
+
+#celek .hasbro .pp-header--divider,
+#celek .hasbro .pp-features--marker,
+#celek .hasbro .ppCarousel .swiper-pagination-bullet-active,
+#celek .hasbro .ppCarousel .swiper-button-prev,
+#celek .hasbro .ppCarousel .swiper-button-next {
+  background-color: #00AEEF;
+}
+#celek .hasbro .pp-header--heading,
+#celek .hasbro .pp-icons--card h3,
+#celek .hasbro .pp-icons--card p,
+#celek .hasbro .pp-features--heading,
+#celek .hasbro .pp-features ul li::marker,
+#celek .hasbro .pp-zigzag--heading,
+#celek .hasbro .ppCarousel .hdng2 {
+  color: #00AEEF;
+}
+#celek .hasbro .pp-icons,
+#celek .hasbro .pp-zigzag {
+  background-color: rgba(0, 174, 239, 0.05);
+}
+#celek .hasbro .ppCarousel .swiper-button-prev:hover,
+#celek .hasbro .ppCarousel .swiper-button-next:hover {
+  background-color: #0098d0;
+}
+#celek .hasbro .pp-icons--card--img {
+  fill: #00AEEF;
+}
+
+#celek {
+  display: block;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #212121;
+}
+#celek *, #celek *::before, #celek *::after {
+  box-sizing: border-box;
+}
+#celek h1, #celek h2, #celek h3, #celek h4, #celek p, #celek ul, #celek ol, #celek li, #celek figure {
+  margin: 0;
+  padding: 0;
+}
+#celek input, #celek button, #celek textarea, #celek select {
+  font: inherit;
+}
+#celek .hidden {
+  display: none;
+}
+#celek.blank p {
+  margin-top: 0;
+}
+#celek a {
+  transition: all 200ms ease-in-out;
+}
+#celek img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: attr(width), attr(height);
+}
+#celek .pp-container__12 {
+  padding: 0;
+}
+#celek .pp-container__10 {
+  padding: 0 97px;
+}
+#celek .pp-container__8 {
+  padding: 0 214px;
+}
+#celek .flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 48px;
+}
+#celek .pp-header {
+  text-align: center;
+}
+#celek .pp-header--divider {
+  background-color: #EE0779;
+  height: 10px;
+}
+#celek .pp-header--perex {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 48px;
+}
+#celek .pp-header--heading {
+  color: #EE0779;
+}
+#celek .pp-header--banner img {
+  width: 100%;
+}
+#celek .pp-icons {
+  background-color: rgba(238, 7, 121, 0.05);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+#celek .pp-icons--row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+#celek .pp-icons--card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 24px;
+  flex: 1 1 0;
+}
+#celek .pp-icons--card--img {
+  height: 80px;
+  width: 80px;
+  fill: #EE0779;
+}
+#celek .pp-icons--card--heading {
+  height: 50px;
+}
+#celek .pp-icons--card h3, #celek .pp-icons--card p {
+  color: #EE0779;
+}
+#celek .pp-video {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+}
+#celek .pp-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 10px solid #fff;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+  left: 50%;
+  transform: translateX(-50%);
+}
+#celek .pp-features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 42px;
+}
+#celek .pp-features--heading {
+  color: #EE0779;
+}
+#celek .pp-features * {
+  flex: 1 1 0;
+}
+#celek .pp-features img {
+  border-radius: 4px;
+  width: 100%;
+}
+#celek .pp-features--list {
+  margin-top: 24px;
+}
+#celek .pp-features--item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+#celek .pp-features--marker {
+  width: 5px;
+  height: 5px;
+  max-width: 5px;
+  border-radius: 50%;
+  margin-top: 8px;
+  background-color: #EE0779;
+}
+#celek .pp-zigzag {
+  background-color: rgba(238, 7, 121, 0.05);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 48px;
+}
+#celek .pp-zigzag img {
+  border-radius: 4px;
+  width: 100%;
+}
+#celek .pp-zigzag--row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 42px;
+}
+#celek .pp-zigzag--row * {
+  flex: 1 1 0;
+}
+#celek .pp-zigzag--row:nth-child(even) .pp-zigzag--caption {
+  order: 1;
+}
+#celek .pp-zigzag--heading {
+  color: #EE0779;
+}
+#celek .pp-zigzag--text {
+  margin-top: 12px;
+}
+
+.layout-0 #celek .pp-container__10 {
+  padding: 0 60px;
+}
+.layout-0 #celek .pp-container__8 {
+  padding: 0 90px;
+}
+
+@media only screen and (max-width: 975px) {
+  .mobile #celek .pp-container__12, .mobile #celek .pp-container__10, .mobile #celek .pp-container__8,
+  .mobileapp #celek .pp-container__12,
+  .mobileapp #celek .pp-container__10,
+  .mobileapp #celek .pp-container__8 {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .mobile #celek .pp-header--logo,
+  .mobileapp #celek .pp-header--logo {
+    width: 40%;
+  }
+  .mobile #celek .pp-header--logo img,
+  .mobileapp #celek .pp-header--logo img {
+    margin: auto;
+  }
+  .mobile #celek .pp-features,
+  .mobileapp #celek .pp-features {
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+  }
+  .mobile #celek .pp-features--caption,
+  .mobileapp #celek .pp-features--caption {
+    width: 604px;
+    margin-top: 24px;
+  }
+  .mobile #celek .pp-video iframe,
+  .mobileapp #celek .pp-video iframe {
+    width: 92%;
+    height: 92%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .mobile #celek .pp-icons--row,
+  .mobileapp #celek .pp-icons--row {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  .mobile #celek .pp-icons--card,
+  .mobileapp #celek .pp-icons--card {
+    width: 85%;
+  }
+  .mobile #celek .pp-icons--card--heading,
+  .mobileapp #celek .pp-icons--card--heading {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .mobile #celek .pp-features--caption,
+  .mobileapp #celek .pp-features--caption {
+    width: auto;
+  }
+  .mobile #celek .pp-zigzag,
+  .mobileapp #celek .pp-zigzag {
+    gap: 24px;
+  }
+  .mobile #celek .pp-zigzag--row,
+  .mobileapp #celek .pp-zigzag--row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+  .mobile #celek .pp-zigzag--row:nth-child(even) .pp-zigzag--caption,
+  .mobileapp #celek .pp-zigzag--row:nth-child(even) .pp-zigzag--caption {
+    order: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,68 @@
+#celek 
+    .brand-select
+        &__box
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: center
+            align-items: flex-end
+            width: calc(25% - 10px)
+            margin: 5px
+            border-radius: 4px
+            box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+            padding: 36px 14px
+            text-align: center
+            cursor: pointer
+            transition: .3s ease-in-out
+            background-color: white
+
+            &:hover
+                box-shadow: 0 2px 6px 0px rgba(0,0,0,0.3)
+
+            &--name
+                width: 100%
+                margin-top: 8px
+                font-size: 14px
+                color: black
+                margin-bottom: 0
+
+        &__wrapper
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: center
+            align-content: flex-start
+            align-items: stretch
+
+// brand colors
+$hasbro-brands: ('disneyprincess': #EE0779, 'monopoly': #EC2127, 'transformers': #C72034, 'mylittlepony': #C35498, 'frozen': #7F408E, 'nerf': #1F4AB3, 'jenga': #0278BE, 'furreal': #1ABDC2, 'playdoh': #0FA462, 'starwars': #000000, 'hasbro': #00AEEF)
+
+// change color for every brand
+@each $name, $hex in $hasbro-brands
+    #celek .#{$name}
+        .pp-header--divider,
+        .pp-features--marker,
+        .ppCarousel .swiper-pagination-bullet-active,
+        .ppCarousel .swiper-button-prev,
+        .ppCarousel .swiper-button-next
+            background-color: $hex
+
+        .pp-header--heading,
+        .pp-icons--card h3,
+        .pp-icons--card p,
+        .pp-features--heading,
+        .pp-features ul li::marker,
+        .pp-zigzag--heading,
+        .ppCarousel .hdng2
+            color: $hex
+
+        .pp-icons,
+        .pp-zigzag
+            background-color: transparentize($hex, .95)
+
+        .ppCarousel .swiper-button-prev:hover,
+        .ppCarousel .swiper-button-next:hover
+            background-color: darken($hex, 6%)
+
+        .pp-icons--card--img
+            fill: $hex
