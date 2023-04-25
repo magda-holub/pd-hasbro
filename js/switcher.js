@@ -32,5 +32,3 @@ switcher.querySelectorAll("button")[2].addEventListener("click", function () {
   });
   this.classList.add("active");
 });
-
-console.log(testLayout);
