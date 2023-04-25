@@ -100,7 +100,7 @@
 }
 
 #celek {
-  max-width: 1310px;
+  max-width: 1250px;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -112,7 +112,7 @@
 }
 
 #celek.layout-1 {
-  width: 1085px;
+  width: 1250px;
 }
 
 #celek.layout-0 {
@@ -826,10 +826,9 @@ button.swiper-pagination-bullet {
   max-width: 100%;
   position: relative;
 }
-#celek .ppCarousel .lp-container__carousel .swiper-container {
+#celek .ppCarousel .lp-container__carousel .swiper {
   height: auto;
   padding: 24px 10px;
-  max-width: 1084px;
   margin: 0 auto;
 }
 #celek .ppCarousel .lp-container__carousel .swiper-wrapper {
